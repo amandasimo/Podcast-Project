@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    
+, initial-scale=1.0"
+    />
+    <title>You are Unstoppable, El Podcast</title>
+  </head>
+  <style>
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      background: #62c9d0;
+    }
+
+    .background {
+      background: #62c9d0;
+    }
+
+    .heading {
+      background: #bc9bcc;
+      padding: 20px 0px 20px 0px;
+    }
+
+    .bottom {
+      background: #f1e5f9;
+      padding: 200px 0px 200px 0px;
+    }
+    .tellMeYourStory {
+      font-size: 30px;
+    }
+
+    h1 {
+      color: white;
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+      font-family: sans-serif;
+      font-weight: 100;
+      font-size: 20px;
+    }
+    h2 {
+      color: white;
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+      font-family: sans-serif;
+      font-weight: 100;
+      font-size: 20px;
+    }
+
+    h3 {
+      color: #bc9bcc;
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+      font-family: sans-serif;
+      padding: 0 20px 0 20px;
+      font-weight: 100;
+      font-size: 20px;
+    }
+
+    h2.hover {
+      text-decoration: underline;
+    }
+
+    p {
+      padding: 20px 20px;
+      color: #919292;
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+      font-family: sans-serif;
+    }
+
+    button.listenToUs {
+      background: #62c9d0;
+      border-radius: 50px;
+      padding: 20px 20px 20px 20px;
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      border: white;
+      border: 0px 20px 20px 0px;
+      color: white;
+      transition: all 0.8s linear;
+    }
+
+    button.listenToUs:hover {
+      background: #bc9bcc;
+      cursor: pointer;
+    }
+
+    button.contactUs {
+      background: #62c9d0;
+      border-radius: 50px;
+      padding: 20px 20px 20px 20px;
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      border: white;
+      border: 0px 20px 20px 0px;
+      color: white;
+      transition: all 0.8s linear;
+    }
+    button.contactUs:hover {
+      background: #bc9bcc;
+      cursor: pointer;
+    }
+    ul {
+      padding: 0;
+      margin: 20px px 0px 0px 20px;
+    }
+
+    li {
+      display: inline;
+      padding: 20px 20px 20px 20px;
+      border: 20px;
+      font-family: sans-serif;
+      font-size: 15px;
+      color: white;
+    }
+
+    li:hover {
+      color: #565457;
+      text-decoration: overline;
+      cursor: pointer;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+  </style>
+
+  <body>
+    <div class="background">
+      <br />
+      <ul>
+        <li>Home</li>
+        <li> <a href="https://open.spotify.com/show/5QTIvM8yVdnB63eyQtLRn3?si=UNxwiqTJSN-wa3K3wxkZUw&nd=1"
+        target="_blank">Episodios </a></li>
+
+          <li> <a href="https://www.instagram.com/youareunstoppable.podcast/?hl=en"
+        target="_blank">Instagram </a></li>
+        </form>
+      </ul>
+
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/005/823/original/Unstoppable_logo_1400x1400-03-03.jpg?1616183091" width="800px" />
+    </div>
+
+    <div class="heading">
+      <h1>You are Unstoppable,</h1>
+      <h2>you just forgot about it.</h2>
+    </div>
+    <br />
+
+    <p>Compartiendo historias que empoderan y normalizan nuestras metas.</p>
+
+    <br />
+    <form
+      action="https://open.spotify.com/show/5QTIvM8yVdnB63eyQtLRn3?si=UNxwiqTJSN-wa3K3wxkZUw&nd=1"
+      method="get"
+      target="_blank"
+    >
+      <button class="listenToUs">Escúchanos en Spotify</button>
+    </form>
+
+    <br />
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/005/824/original/DSC04743.JPG?1616183107" />
+
+    <div class="bottom">
+      <br />
+      <h3 class="tellMeYourStory">¿Te animas?</h3>
+      <br />
+      <button class="contactUs">Cuéntanos tu historia</button>
+    </div>
+
+    <p>Coded by Amanda Simo</p>
+
+    <script>
+      function tellMeYourInfo() {
+        let nombre = prompt("¿Cuál es tu nombre?");
+        let age = prompt("¿Cuál es tu edad?");
+        let email = prompt("¿Cuál es tu E-Mail?");
+        let passion = prompt(
+          "¿Cuál es tu mayor pasión que quisieras compartir con nosotras?"
+        );
+
+        let titulo = document.querySelector("h3");
+
+        if (age > 18) {
+          titulo.innerHTML =
+            "Hola " +
+            "<strong>" +
+            nombre +
+            "!" +
+            "</strong>" +
+            ", gracias por tu interés en compartir sobre " +
+            "<strong>" +
+            passion +
+            "</strong>" +
+            " con nosotras." +
+            "<br />" +
+            "Te contactaremos en breve a: " +
+            "<strong>" +
+            email +
+            "</strong>";
+        } else {
+          titulo.innerHTML =
+            "Hola " +
+            "<strong>" +
+            nombre +
+            "</strong>" +
+            ", aun eres muy joven para compartir sobre " +
+            "<strong>" +
+            passion +
+            "</strong>" +
+            " con nosotras, regresa pronto!";
+        }
+      }
+
+      let button = document.querySelector(".contactUs");
+      button.addEventListener("click", tellMeYourInfo);
+
+    </script>
+  </body>
+</html>
